@@ -1,0 +1,157 @@
+{
+	"id": "b3cec0b1-a65d-42dc-b804-4d3da8f35ca1",
+	"name": "React-Node-CRUD-API",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"c7336a31-d24e-497f-b84c-73ade46a7005",
+		"9ff27b60-cccd-4b56-a563-a3b6fead3539",
+		"a6b78010-74cc-4f78-834d-88868bdf4374",
+		"15eebebb-a448-4c8b-a656-bbc90d4d4a06",
+		"6d090f2b-76e2-4315-9658-df5543ae3a89"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "15eebebb-a448-4c8b-a656-bbc90d4d4a06",
+			"name": "Delete User",
+			"url": "http://localhost:3000/users/2",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "6d090f2b-76e2-4315-9658-df5543ae3a89",
+			"name": "Edit User Details",
+			"url": "http://localhost:3000/users/1",
+			"description": "",
+			"data": [
+				{
+					"key": "gender",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9ff27b60-cccd-4b56-a563-a3b6fead3539",
+			"name": "Get list of Users",
+			"url": "http://localhost:3000/users/",
+			"description": "http://localhost:3000/users/",
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a6b78010-74cc-4f78-834d-88868bdf4374",
+			"name": "Activate/deActivate User",
+			"url": "http://localhost:3000/users/2/active",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c7336a31-d24e-497f-b84c-73ade46a7005",
+			"name": "Create User",
+			"url": "http://localhost:3000/users",
+			"description": "http://localhost:3000/users",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "devashi",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "nayak",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isActive",
+					"value": "true",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "true",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		}
+	]
+}
