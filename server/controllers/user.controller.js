@@ -22,7 +22,7 @@ exports.list = async function(req, res) {
 
   try {
     userList = await userInfo.findAll({
-      limit: req.query.count || 10,
+      limit: req.query.count || 100,
       offset: req.query.skip,
       order: sorting,
       where,
